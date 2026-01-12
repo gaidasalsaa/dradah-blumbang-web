@@ -32,7 +32,7 @@ export default function Hero() {
           Selamat Datang di
           <br />
           <span className="text-[#FFA726]">
-            Desa Dradah Blumbang
+            Desa Dradahblumbang
           </span>
         </h1>
 

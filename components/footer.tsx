@@ -63,23 +63,38 @@ export default function Footer() {
 
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.facebook.com/share/16k66EnisL/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-orange-400 hover:bg-orange-500 transition"
               >
                 <Image src="/facebook.svg" alt="Facebook" width={10} height={10} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/pemdesdradahblumbang?igsh=NzQxMzZoNzEybndo"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-orange-400 hover:bg-orange-500 transition"
               >
                 <Image src="/instagram-dradah.svg" alt="Instagram" width={16} height={16} />
               </a>
               <a
-                href="#"
+                href="https://x.com/PemdesD90879?t=Xr5N3DT1l6614A5LHJcI2g&s=08"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-orange-400 hover:bg-orange-500 transition"
               >
-                <Image src="/ytb-dradah.svg" alt="YouTube" width={16} height={16} />
+                <Image src="/X.svg" alt="Twitter" width={18} height={18} />
               </a>
+              <a
+                href="https://www.facebook.com/share/16k66EnisL/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-orange-400 hover:bg-orange-500 transition"
+              >
+                <Image src="/tiktok.png" alt="Facebook" width={18} height={18} />
+              </a>
+
             </div>
           </div>
 

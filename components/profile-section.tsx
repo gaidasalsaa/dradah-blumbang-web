@@ -19,7 +19,7 @@ export default function ProfileSection() {
           <div className="w-24 h-1 bg-[#FFA726] rounded-full mx-auto mt-3" />
 
           <p className="mt-4 text-[#757575] max-w-3xl mx-auto">
-            Mengenal lebih dekat Desa Dradah Blumbang dengan segala potensi dan keunikannya
+            Mengenal lebih dekat Desa Dradahblumbang dengan segala potensi dan keunikannya
           </p>
         </div>
 
@@ -51,8 +51,8 @@ export default function ProfileSection() {
               Visi
             </h3>
 
-            <p className="text-[#757575] text-sm">
-              abcd
+            <p className="text-[#000000] text-sm text-justify">
+              "Terwujudnya Desa Dradahblumbang Maju, Sejahtera, Damai, Bermartabat, Berdaya Saing dan Berkarakter"
             </p>
           </Card>
 
@@ -62,12 +62,18 @@ export default function ProfileSection() {
               <Users className="text-[#FFA726]" />
             </div>
 
-            <h3 className="text-lg font-semibold text-[#33691E] mb-2">
+            <h3 className="text-lg font-semibold text-[#33691E] mb-1">
               Misi
             </h3>
 
-            <p className="text-[#757575] text-sm">
-              Kaya akan sumber daya alam dengan area
+            <p className="text-[#000000] text-sm text-justify">
+              1. Mewujudkan pelayanan masyarakat desa yang amanah
+            </p>
+            <p className="text-[#000000] text-sm text-justify">
+              2. Mewujudkan peningkatan taraf hidup Masayarakat Desa Dradahblumbang
+            </p>
+            <p className="text-[#000000] text-sm text-justify">
+              3. Mewujudkan Pembangunan yang berkelanjutan untuk menuju Desa Dradahblumbang Lebih Maju
             </p>
           </Card>
 

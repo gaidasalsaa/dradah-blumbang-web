@@ -15,39 +15,28 @@ export default function GaleriKegiatan() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <GalleryCard
-            img="/images/galeri/musyawarah.jpg"
-            title="Musyawarah Desa"
-            desc="Rapat koordinasi pembangunan desa"
+            img="/apel-pagi.jpeg"
+            title="Apel Pagi"
+            desc="Kegiatan apel pagi di Balai Desa Dradahblumbang"
           />
 
           <GalleryCard
-            img="/images/galeri/agustusan.jpg"
-            title="17 Agustus"
-            desc="Perayaan tradisi budaya lokal"
+            img="/pertemuan-pkk.jpeg"
+            title="Pertemuan PKK"
+            desc="Pertemuan rutin tim penggerak PKK dan Dharma Wanita Persatuan"
           />
 
           <GalleryCard
-            img="/images/galeri/infrastruktur.jpg"
-            title="Pembangunan Infrastruktur"
-            desc="Perbaikan jalan dan fasilitas umum"
+            img="/pelatihan-umkm.jpeg"
+            title="Pelatihan Skala UMKM"
+            desc="Pelatihan pembuatan nugget ayam sayur with bubble crumb 
+            dana desa tahun 2025 Bidang Pemberdayaan Masyarakat"
           />
 
           <GalleryCard
-            img="/images/galeri/pertanian.jpg"
-            title="Pelatihan Pertanian"
-            desc="Program peningkatan hasil panen"
-          />
-
-          <GalleryCard
-            img="/images/galeri/kesehatan.jpg"
-            title="Program Kesehatan"
-            desc="Pelayanan kesehatan masyarakat"
-          />
-
-          <GalleryCard
-            img="/images/galeri/pendidikan.jpg"
-            title="Pendidikan Anak"
-            desc="Program bimbingan belajar gratis"
+            img="/dana-blt.jpeg"
+            title="Pembagian BLT-DD"
+            desc="Penyaluran Bantuan Langsung Tunai Dana Desa (BLT-DD) setiap 3 bulan sekali"
           />
 
         </div>

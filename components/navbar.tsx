@@ -37,7 +37,7 @@ export default function Navbar() {
                     scrolled ? "text-[#33691E]" : "text-white"
                 }`}
                 >
-                DESA DRADAH BLUMBANG
+                DESA DRADAHBLUMBANG
                 </p>
                 <p
                 className={`text-xs ${
@@ -64,15 +64,19 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button className="bg-[#FFA726] hover:bg-[#fb8c00] text-white font-semibold rounded-full">
+            <a href="#administrasi">
+              <Button className="bg-[#FFA726] hover:bg-[#fb8c00] text-white font-semibold rounded-full">
               Administrasi
             </Button>
+            </a>
           </div>
 
           {/* Mobile Hamburger Button */}
           <button
             onClick={() => setOpen(!open)}
-            className="md:hidden text-white"
+            className={`md:hidden transition ${
+              scrolled ? "text-black" : "text-white"
+            }`}
           >
             {open ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -88,9 +92,11 @@ export default function Navbar() {
               <a onClick={() => setOpen(false)} href="#data" className="hover:text-[#FFA726]">Data Wilayah & Kependudukan</a>
               <a onClick={() => setOpen(false)} href="#galeri" className="hover:text-[#FFA726]">Galeri Kegiatan</a>
 
+              <a href="#administrasi">
               <Button className="mt-3 bg-[#FFA726] hover:bg-[#fb8c00] text-white font-semibold rounded-full w-full">
                 Administrasi
               </Button>
+              </a>
             </nav>
           </div>
         )}
