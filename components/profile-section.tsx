@@ -41,10 +41,6 @@ export default function ProfileSection() {
                   Mata pencaharian masyarakat Desa Dradahblumbang didominasi oleh sektor pertanian dengan jumlah tenaga kerja sebanyak 2.528 orang. Selain itu, sektor jasa dan perdagangan menyerap 351 orang, sektor industri sebanyak 529 orang, serta sektor lain-lain sebanyak 22 orang. Secara keseluruhan, jumlah penduduk yang memiliki mata pencaharian mencapai 4.835 orang, mencerminkan potensi ekonomi desa yang beragam dan produktif.
                 </p>
             </div>
-
-            {/* <p className="text-[#000000] text-sm text-justify">
-              Mata pencaharian masyarakat Desa Dradahblumbang didominasi oleh sektor pertanian dengan jumlah tenaga kerja sebanyak 2.528 orang. Selain itu, sektor jasa dan perdagangan menyerap 351 orang, sektor industri sebanyak 529 orang, serta sektor lain-lain sebanyak 22 orang. Secara keseluruhan, jumlah penduduk yang memiliki mata pencaharian mencapai 4.835 orang, mencerminkan potensi ekonomi desa yang beragam dan produktif.
-            </p> */}
           </Card>
 
           {/* Visi */}
@@ -85,14 +81,14 @@ export default function ProfileSection() {
               </div>
 
               <div className="flex items-start gap-2 p-4 rounded-xl bg-white shadow-sm">
-                <CheckCircle2 className="text-[#FFA726] mt-0.5" size={22} />
+                <CheckCircle2 className="text-[#FFA726] mt-0.5" size={24} />
                 <p className="text-[#000000] text-sm text-justify">
                   Mewujudkan peningkatan taraf hidup masyarakat Desa Dradahblumbang
                 </p>
               </div>
 
               <div className="flex items-start gap-2 p-4 rounded-xl bg-white shadow-sm">
-                <CheckCircle2 className="text-[#FFA726] mt-0.5" size={28} />
+                <CheckCircle2 className="text-[#FFA726] mt-0.5" size={30} />
                 <p className="text-[#000000] text-sm text-justify">
                   Mewujudkan pembangunan yang berkelanjutan untuk menuju Desa Dradahblumbang lebih maju
                 </p>

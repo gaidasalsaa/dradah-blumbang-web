@@ -35,15 +35,15 @@ export default function KontakDesa() {
                   Alamat
                 </h4>
                 <p className="text-sm text-gray-500 leading-relaxed">
-                  Desa Dradah Blumbang<br />
+                  Jl. Raya Babat, Dradah, Dradah Blumbang,<br />
                   Kecamatan Kedungpring<br />
-                  Kabupaten Lamongan, Jawa Timur 62261
+                  Kabupaten Lamongan, Jawa Timur 62272
                 </p>
               </div>
             </div>
 
             {/* Telepon */}
-            <div className="flex items-start gap-4">
+            {/* <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-[#E8F5E9] flex items-center justify-center">
                 <Image
                   src="/telepon.svg"
@@ -60,7 +60,7 @@ export default function KontakDesa() {
                   (0322) 123-4567
                 </p>
               </div>
-            </div>
+            </div> */}
 
             {/* Email */}
             <div className="flex items-start gap-4">
@@ -85,7 +85,7 @@ export default function KontakDesa() {
           </div>
 
           {/* Right - Google Maps */}
-          <div className="w-full h-[320px] rounded-xl overflow-hidden shadow-md">
+          <div className="w-full h-[250px] rounded-xl overflow-hidden shadow-md">
             <iframe
               src="https://www.google.com/maps?q=Desa+Dradah+Blumbang+Kedungpring+Lamongan+Jawa+Timur&output=embed"
               width="100%"

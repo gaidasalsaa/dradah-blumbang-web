@@ -45,7 +45,6 @@ export default function Administrasi() {
                 transition
               "
             >
-              {/* Bullet icon kecil */}
               <div className="w-8 h-8 rounded-full bg-[#FFA726]/20 flex items-center justify-center mb-3">
                 <span className="text-[#FB8C00] font-bold text-lg">
                   {i + 1}
@@ -61,7 +60,10 @@ export default function Administrasi() {
 
         {/* CTA button */}
         <div className="flex justify-center mt-10">
-          <button
+          <a
+            href="https://forms.gle/45Krbz6FYC9Y3MGS6"
+            target="_blank"
+            rel="noopener noreferrer"
             className="
               bg-[#FFA726]
               hover:bg-[#FB8C00]
@@ -75,7 +77,7 @@ export default function Administrasi() {
             "
           >
             Klik di sini untuk mengajukan permohonan
-          </button>
+          </a>
         </div>
 
       </div>

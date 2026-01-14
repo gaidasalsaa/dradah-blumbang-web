@@ -51,10 +51,10 @@ export default function Footer() {
             </h3>
 
             <div className="space-y-3 text-sm text-white/80 mb-4">
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <Phone size={16} />
                 <span>(0322) 123-456</span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-2">
                 <Mail size={16} />
                 <span>pemerintahdesadradahblumbang@gmail.com</span>
