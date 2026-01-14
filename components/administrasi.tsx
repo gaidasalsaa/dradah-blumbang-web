@@ -1,47 +1,80 @@
 export default function Administrasi() {
   return (
     <section id="administrasi" className="w-full py-24 bg-[#FFF9EB]">
-      <div className="max-w-3xl mx-auto px-4 text-center">
+      <div className="max-w-5xl mx-auto px-4">
 
         {/* Title */}
-        <h2 className="text-3xl font-bold text-green-700">
+        <h2 className="text-3xl font-bold text-green-700 text-center">
           Administrasi
         </h2>
         <div className="w-16 h-1 bg-[#FFA726] mx-auto mt-2 mb-8 rounded-full" />
 
         {/* Description */}
-        <p className="text-sm text-gray-500 leading-relaxed mb-6">
-          Warga dapat mengajukan dokumen atau permohonan tanpa harus datang langsung,
-          cukup dengan mengisi formulir digital yang tersedia.
+        <p className="text-sm text-gray-600 leading-relaxed text-center max-w-3xl mx-auto">
+          Fitur Administrasi Desa memudahkan warga mengurus berbagai keperluan administrasi secara online.
+          Warga cukup memilih jenis layanan, kemudian mengisi formulir digital yang telah disediakan.
         </p>
 
-        <p className="text-sm text-gray-500 leading-relaxed mb-6">
-          Formulir yang tersedia meliputi:
+        <p className="text-sm text-gray-700 font-semibold text-center mt-6 mb-4">
+          Jenis layanan yang tersedia:
         </p>
 
-        {/* List */}
-        <ol className="text-sm text-gray-500 space-y-2 mb-10">
-          <li>1.</li>
-          <li>2.</li>
-          <li>3.</li>
-        </ol>
+        {/* ============== CARD GRID ================= */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-4">
 
-        {/* Button */}
-        <div className="flex justify-center">
+          {[
+            "Surat Keterangan Tidak Mampu (SKTM)",
+            "Surat Keterangan Domisili",
+            "Surat Keterangan Usaha (SKU)",
+            "Surat Pengantar SKCK",
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="
+                bg-white
+                rounded-2xl
+                shadow-md
+                border
+                border-orange-100
+                p-5
+                flex
+                flex-col
+                items-center
+                text-center
+                hover:shadow-lg
+                transition
+              "
+            >
+              {/* Bullet icon kecil */}
+              <div className="w-8 h-8 rounded-full bg-[#FFA726]/20 flex items-center justify-center mb-3">
+                <span className="text-[#FB8C00] font-bold text-lg">
+                  {i + 1}
+                </span>
+              </div>
+
+              <p className="text-sm font-medium text-gray-700 leading-relaxed">
+                {item}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA button */}
+        <div className="flex justify-center mt-10">
           <button
             className="
               bg-[#FFA726]
               hover:bg-[#FB8C00]
               text-white
-              px-8
-              py-3
+              px-10
+              py-3.5
               rounded-full
               shadow-md
               transition
               font-medium
             "
           >
-            Klik disini
+            Ajukan Layanan Administrasi
           </button>
         </div>
 

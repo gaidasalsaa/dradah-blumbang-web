@@ -77,7 +77,7 @@ export default function KontakDesa() {
                   Email
                 </h4>
                 <p className="text-sm text-gray-500">
-                  desa.dradahblumbang@lamongan.go.id
+                  pemerintahdesadradahblumbang@gmail.com
                 </p>
               </div>
             </div>

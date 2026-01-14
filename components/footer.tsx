@@ -57,7 +57,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={16} />
-                <span>desa.dradahblumbang@lamongan.go.id</span>
+                <span>pemerintahdesadradahblumbang@gmail.com</span>
               </div>
             </div>
 
