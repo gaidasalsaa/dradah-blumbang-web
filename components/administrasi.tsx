@@ -74,7 +74,7 @@ export default function Administrasi() {
               font-medium
             "
           >
-            Ajukan Layanan Administrasi
+            Klik di sini untuk mengajukan permohonan
           </button>
         </div>
 
