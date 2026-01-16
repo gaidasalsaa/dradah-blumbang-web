@@ -3,12 +3,14 @@
 import Image from "next/image";
 import { useState } from "react";
 
+type GalleryItem = {
+  img: string;
+  title: string;
+  desc: string;
+};
+
 export default function GaleriKegiatan() {
-  const [selected, setSelected] = useState<null | {
-    img: string;
-    title: string;
-    desc: string;
-  }>(null);
+  const [selected, setSelected] = useState<GalleryItem | null>(null);
 
   return (
     <section id="galeri" className="w-full py-16 bg-white">
@@ -22,7 +24,6 @@ export default function GaleriKegiatan() {
 
         {/* Grid Galeri */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
           <GalleryCard
             img="/apel-pagi.jpeg"
             title="Apel Pagi"
@@ -57,38 +58,47 @@ export default function GaleriKegiatan() {
             desc="Kegiatan kerja bakti warga dusun Blumbang bersama mahasiswa KKN BBK 7 Universitas Airlangga"
             onOpen={setSelected}
           />
+
+          <GalleryCard
+            img="/posyandu.jpg"
+            title="Posyandu"
+            desc={`Pada 15 Januari 2026, Tim KKN BBK 7 Dradah Blumbang berpartisipasi dalam kegiatan Posyandu di PAUD Al-Ma’ruf dengan membantu penimbangan balita, pencatatan perkembangan, dan administrasi bersama kader setempat. Kegiatan dilanjutkan dengan pemeriksaan kesehatan gratis bagi lansia di Dusun Dradah, meliputi pengecekan tensi dan gula darah, konsultasi kesehatan, serta pemberian obat dan vitamin. Seluruh rangkaian kegiatan terlaksana berkat kerja sama dengan Puskesmas Desa Dradahblumbang.`}
+            onOpen={setSelected}
+          />
         </div>
       </div>
 
       {/* ===== POPUP MODAL ===== */}
       {selected && (
         <div
-          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-4"
+          className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center px-4"
           onClick={() => setSelected(null)}
         >
           <div
-            className="bg-white rounded-2xl max-w-3xl w-full p-4"
+            className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto p-5"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative w-full h-[400px] rounded-xl overflow-hidden mb-4">
+            {/* Image */}
+            <div className="relative w-full h-[300px] md:h-[420px] rounded-xl overflow-hidden mb-4">
               <Image
                 src={selected.img}
                 alt={selected.title}
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
 
-            <h3 className="text-xl font-bold text-green-700 mb-1">
+            {/* Text */}
+            <h3 className="text-xl font-bold text-green-700 mb-2">
               {selected.title}
             </h3>
 
-            <p className="text-gray-700 text-sm">
+            <p className="text-gray-700 text-sm leading-relaxed whitespace-pre-line">
               {selected.desc}
             </p>
 
             <button
-              className="mt-4 px-4 py-2 rounded-full bg-[#FFA726] text-white mx-auto block"
+              className="mt-6 px-5 py-2 rounded-full bg-[#FFA726] text-white mx-auto block"
               onClick={() => setSelected(null)}
             >
               Tutup
@@ -111,11 +121,11 @@ function GalleryCard({
   img: string;
   title: string;
   desc: string;
-  onOpen: any;
+  onOpen: (item: GalleryItem) => void;
 }) {
   return (
     <div
-      className="cursor-pointer"
+      className="cursor-pointer group"
       onClick={() => onOpen({ img, title, desc })}
     >
       {/* Image */}
@@ -124,7 +134,7 @@ function GalleryCard({
           src={img}
           alt={title}
           fill
-          className="object-cover"
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
 
@@ -133,9 +143,14 @@ function GalleryCard({
         <h3 className="font-semibold text-green-700">
           {title}
         </h3>
-        <p className="text-sm text-gray-600">
+
+        <p className="text-sm text-gray-600 line-clamp-2">
           {desc}
         </p>
+
+        <span className="text-sm text-[#FFA726] font-medium mt-1 inline-block">
+          Selengkapnya →
+        </span>
       </div>
     </div>
   );

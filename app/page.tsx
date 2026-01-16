@@ -2,7 +2,8 @@ import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import ProfileSection from "@/components/profile-section";
 import GeografisSection from "@/components/geografis";
-import StrukturOrganisasi from "@/components/struktur-organisasi";
+import StrukturDesa from "@/components/struktur-desa";
+// import StrukturOrganisasi from "@/components/struktur-organisasi";
 import DataWilayah from "@/components/data-wilayah";
 import GaleriKegiatan from "@/components/galeri-kegiatan";
 import Administrasi from "@/components/administrasi";
@@ -18,7 +19,8 @@ export default function HomePage() {
       <Hero />
       <ProfileSection />
       <GeografisSection />
-      <StrukturOrganisasi />
+      <StrukturDesa />
+      {/* <StrukturOrganisasi /> */}
       <DataWilayah />
       <GaleriKegiatan />
       <Administrasi />

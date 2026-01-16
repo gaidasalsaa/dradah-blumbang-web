@@ -101,7 +101,7 @@ export default function StrukturOrganisasi() {
               { t: "Kepala Dusun Carangbang", n: "Marno" },
               { t: "Kepala Dusun Dradah", n: "Tukinem" },
               { t: "Kepala Dusun Tarik", n: "Suryanto" },
-              { t: "Kepala Dusun Sempur", n: "Untung Sujatmiko" },
+              { t: "Kepala Dusun Sempu", n: "Untung Sujatmiko" },
             ].map((i, k) => (
               <div
                 key={k}
