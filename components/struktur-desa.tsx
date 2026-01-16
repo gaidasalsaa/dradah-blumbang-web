@@ -22,7 +22,7 @@ export default function StrukturOrganisasi() {
           <div className="relative w-full">
 
             <Image
-              src="/struktur-desa-hd.svg"
+              src="/struktur-desa-fix (2).svg"
               alt="Struktur Organisasi Desa"
 
               /* ukuran asli – supaya tajam */
@@ -43,10 +43,6 @@ export default function StrukturOrganisasi() {
 
         </div>
       </div>
-
-      {/* <p className="text-center text-gray-500 text-sm mt-2">
-        Tampilan otomatis menyesuaikan layar laptop & HP
-      </p> */}
 
     </section>
   );

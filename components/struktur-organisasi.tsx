@@ -89,9 +89,6 @@ export default function StrukturOrganisasi() {
         {/* ================== LEVEL 5 : KEPALA DUSUN ================== */}
         <div className="mt-16 relative pt-1">
 
-          {/* Garis vertikal dari tengah */}
-          {/* <div className="mx-auto w-[2px] h-[70px] bg-green-300" /> */}
-
           {/* garis horizontal dusun */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[82%] h-[2px] bg-green-300" />
 
